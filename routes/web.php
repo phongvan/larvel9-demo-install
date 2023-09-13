@@ -22,3 +22,5 @@ Route::get('/', function () {
     //xbecker@example.com
     return view('welcome'); // TInhTN
 });
+
+Route::resource('posts',\App\Http\Controllers\PostsController::class);
