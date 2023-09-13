@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    //Auth::user()->id;
+    Auth::loginUsingId(2);
+
+    //xbecker@example.com
+    return view('welcome'); // TInhTN
 });
