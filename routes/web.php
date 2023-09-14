@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
     //Auth::user()->id;
-    Auth::loginUsingId(2);
+    Auth::loginUsingId(4);
 
     //xbecker@example.com
     return view('welcome'); // TInhTN

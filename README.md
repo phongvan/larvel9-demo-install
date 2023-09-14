@@ -7,6 +7,18 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+
+# Các gói cần thiết cài đặt 
+- **[jenssegers/mongodb]() => `kết nối db mongo`**
+- **[laravel/socialite]() => `đăng nhập MXH`**
+- **[laravel/passport]() => `đăng nhập oauth`**
+- **[opcodesio/log-viewer]() => `xem nhật ký lỗi  v`**
+- **[prettus/l5-repository]() => `repository base`**
+- **[knuckleswtf/scribe]() => `viết doc api`**
+- **[spatie/laravel-activitylog]() => `ghi lại log hành vi theo chỉ định`**
+- **[laravel/pint]() => `đặt quy tắc mặc định theo PSR-12; bắt buộc phải chạy trước mỗi lần commit`**
+- **[spatie/laravel-permission]() => `phân quyền`**
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
@@ -28,6 +40,7 @@ Laravel has the most extensive and thorough [documentation](https://laravel.com/
 You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+
 
 ## Laravel Sponsors
 

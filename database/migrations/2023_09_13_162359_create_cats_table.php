@@ -14,8 +14,8 @@ return new class extends Migration
 	{
 		Schema::create('cats', function(Blueprint $table) {
             $table->increments('id');
-			$table->title('string')->string();
-			$table->content('text')->text();
+			$table->string('string')->string();
+			$table->text('text')->text();
 
             $table->timestamps();
 		});

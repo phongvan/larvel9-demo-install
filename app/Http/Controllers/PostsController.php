@@ -11,6 +11,7 @@ use App\Http\Requests\PostCreateRequest;
 use App\Http\Requests\PostUpdateRequest;
 use App\Repositories\PostRepository;
 use App\Validators\PostValidator;
+use Spatie\Activitylog\Models\Activity;
 
 /**
  * Class PostsController.
@@ -83,6 +84,17 @@ class PostsController extends Controller
                 'message' => 'Post created.',
                 'data'    => $post->toArray(),
             ];
+
+            //activity()->log('Look mum, I logged something');
+
+            $activity = Activity::all()->last();
+            dd($activity->changes);
+
+
+          /*  $activity->description; //trả 'created'
+            $activity->subject; //trả về 1 thể hiện của NewsItem
+            $activity->changes; //trả về ['attributes' => ['name' => 'original name', 'text' => 'Lorum']];*/
+
 
             if ($request->wantsJson()) {
 

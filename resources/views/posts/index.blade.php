@@ -25,11 +25,20 @@
         @foreach($posts as $post)
             <tr>
                 <td>{{$post->id}}</td>
-                <td>{{$post->title}}</td>
+                <td>
+                    <a href="{{route('posts.edit',$post->id)}}">
+                    {{$post->title}}</a></td>
                 <td>{{$post->description}}</td>
                 <td>{{$post->state}}</td>
                 <td>{{$post->url_image}}</td>
                 <td>{{$post->created_at}}</td>
+
+                <td>
+                    <form action="{{route('posts.destroy',$post->id)}}" method="POST">
+                        @method('DELETE') @csrf
+                        <button class="btn btn-danger">Del</button>
+                    </form>
+                </td>
             </tr>
         @endforeach
 
